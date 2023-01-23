@@ -23,5 +23,9 @@ public class StartProgramm : MonoBehaviour
         notification.FireTime = System.DateTime.Now.AddMinutes(1);
 
         AndroidNotificationCenter.SendNotification(notification, "channel_id");
+
+        var agent = IronSource.Agent;
+        agent.validateIntegration();
+        agent.init("16bb59bdd");
     }
 }

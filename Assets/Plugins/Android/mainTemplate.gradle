@@ -8,6 +8,18 @@
         maven {
             url (unityProjectPath + "/Assets/GeneratedLocalRepo/Firebase/m2repository") // Assets/Firebase/Editor/AppDependencies.xml:22, Assets/Firebase/Editor/AuthDependencies.xml:20, Assets/Firebase/Editor/StorageDependencies.xml:20
         }
+        maven {
+            url "https://android-sdk.is.com/" // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:9, Assets/IronSource/Editor/ISTapJoyAdapterDependencies.xml:8, Assets/IronSource/Editor/ISVungleAdapterDependencies.xml:16
+        }
+        maven {
+            url "https://maven.google.com/" // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:17, Assets/IronSource/Editor/IronSourceSDKDependencies.xml:25
+        }
+        maven {
+            url "https://sdk.tapjoy.com/" // Assets/IronSource/Editor/ISTapJoyAdapterDependencies.xml:15
+        }
+        maven {
+            url "https://jitpack.io/" // Assets/IronSource/Editor/ISVungleAdapterDependencies.xml:8
+        }
         mavenLocal()
         mavenCentral()
     }
@@ -19,7 +31,9 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 // Android Resolver Dependencies Start
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:17
     implementation 'com.google.android.gms:play-services-base:18.1.0' // Assets/Firebase/Editor/AppDependencies.xml:17
+    implementation 'com.google.android.gms:play-services-basement:18.1.0' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:25
     implementation 'com.google.firebase:firebase-analytics:21.2.0' // Assets/Firebase/Editor/StorageDependencies.xml:15
     implementation 'com.google.firebase:firebase-app-unity:10.3.0' // Assets/Firebase/Editor/AppDependencies.xml:22
     implementation 'com.google.firebase:firebase-auth:21.1.0' // Assets/Firebase/Editor/AuthDependencies.xml:13
@@ -27,6 +41,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-common:20.2.0' // Assets/Firebase/Editor/AppDependencies.xml:13
     implementation 'com.google.firebase:firebase-storage:20.1.0' // Assets/Firebase/Editor/StorageDependencies.xml:13
     implementation 'com.google.firebase:firebase-storage-unity:10.3.0' // Assets/Firebase/Editor/StorageDependencies.xml:20
+    implementation 'com.ironsource.adapters:tapjoyadapter:4.1.23' // Assets/IronSource/Editor/ISTapJoyAdapterDependencies.xml:8
+    implementation 'com.ironsource.adapters:vungleadapter:4.3.18' // Assets/IronSource/Editor/ISVungleAdapterDependencies.xml:16
+    implementation 'com.ironsource.sdk:mediationsdk:7.2.6' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:9
+    implementation 'com.tapjoy:tapjoy-android-sdk:12.11.1' // Assets/IronSource/Editor/ISTapJoyAdapterDependencies.xml:15
+    implementation 'com.vungle:publisher-sdk-android:6.12.0' // Assets/IronSource/Editor/ISVungleAdapterDependencies.xml:8
 // Android Resolver Dependencies End
 **DEPS**}
 

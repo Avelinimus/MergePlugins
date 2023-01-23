@@ -1,6 +1,8 @@
 <dependencies>
   <packages>
+    <package>com.google.android.gms:play-services-ads-identifier:18.0.1</package>
     <package>com.google.android.gms:play-services-base:18.1.0</package>
+    <package>com.google.android.gms:play-services-basement:18.1.0</package>
     <package>com.google.firebase:firebase-analytics:21.2.0</package>
     <package>com.google.firebase:firebase-app-unity:10.3.0</package>
     <package>com.google.firebase:firebase-auth:21.1.0</package>
@@ -8,6 +10,11 @@
     <package>com.google.firebase:firebase-common:20.2.0</package>
     <package>com.google.firebase:firebase-storage:20.1.0</package>
     <package>com.google.firebase:firebase-storage-unity:10.3.0</package>
+    <package>com.ironsource.adapters:tapjoyadapter:4.1.23</package>
+    <package>com.ironsource.adapters:vungleadapter:4.3.18</package>
+    <package>com.ironsource.sdk:mediationsdk:7.2.6</package>
+    <package>com.tapjoy:tapjoy-android-sdk:12.11.1</package>
+    <package>com.vungle:publisher-sdk-android:6.12.0</package>
   </packages>
   <files>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.3.0/firebase-app-unity-10.3.0.aar</file>
